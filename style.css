@@ -1,0 +1,75 @@
+/* Global styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Toggle classes */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.header {
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.header-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.navigation-bar-mobile {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: teal;
+  /* text-align: center; */
+  padding: 24px;
+  }
+    .toggle-button-wrapper {
+      display: flex;
+      justify-content: end;
+    }
+    .toggle-button {
+      background-color: transparent;
+      border: 0;
+      font-size: 30px;
+      color: lightgray;
+    }
+    .nav-items {
+      margin: 0;
+      padding: 0;
+      max-width: 50%;
+    }
+    .nav-item {
+      list-style-type: none;
+      border-bottom: 1px solid wheat;
+      padding: 4px;
+    }
+    .nav-item + .nav-item {
+      margin-top: 16px;
+    }
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+
