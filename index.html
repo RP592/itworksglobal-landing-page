@@ -10,36 +10,78 @@
 <body>
   <header class="header">
     <div class="header-container">
-      <div class="logo"></div>
-      <nav id="navigation-bar-mobile" class="navigation-bar-mobile">
-        <div class="toggle-button-wrapper">
-          <button onclick="closeMobileMenu()" class="toggle-button">X</button>
-        </div>
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+      
+      <nav id="desktop-menu" class="desktop-menu flex-row">
+
+     
+        <div class="desktop-logo">LOGO</div>
+    
+
+        <ul class="desktop-menu-nav-items flex-row">
+          <li class="desktop=menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Why us?</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">Why us?</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">Products</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Partners</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">Partners</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clients</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link" href="#">Clients</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-button" href="#">Contact Us</a>
+          <li class="desktop-menu-nav-item">
+            <a class="desktop-menu-nav-link desktop-menu-nav-button" href="#">Contact Us</a>
           </li>
         </ul>
 
+        <div class="desktop-menu-toggle-wrapper">
+          <button onclick="openMobileMenu()" class="toggle-button">M</button>
+        </div>
       </nav>
+
+      <!-- TODO: Remove the hide class from here -->
+      <nav id="mobile-menu" class="mobile-menu hide">
+        <div class="logo-toggle-wrapper flex-row">
+          <div class="mobile-logo">LOGO</div>
+          <div class="mobile-menu-toggle-wrapper">
+            <button onclick="closeMobileMenu()" class="mobile-menu-toggle">X</button>
+          </div>
+        </div>
+
+
+        <ul class="mobile-menu-nav-items">
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">About</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">Why us?</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">Services</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">Products</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">Partners</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="#">Clients</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link mobile-menu-nav-button" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+
       <div class="intro">
         <div class="intro-text">
           <p class="intro-subtitle">Moving your business next level</p>
