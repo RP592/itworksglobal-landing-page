@@ -73,8 +73,12 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #1d1e22;
+  background-color: #28282B;
   padding: 24px;
+}
+
+.mobile-logo {
+  width: 52px;
 }
 
 .logo-toggle-wrapper {
@@ -114,6 +118,20 @@ button {
   justify-content: space-between;
 }
 
+.desktop-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.desktop-logo {
+  width: 52px;
+}
+
+.logo-text {
+  text-transform: uppercase;
+}
+
 .desktop-toggle-button {
   background-color: transparent;
   color: white;
@@ -139,6 +157,14 @@ button {
 
 @media (min-width: 768px) {
 
+  .desktop-logo-wrapper {
+    gap: 24px;
+  }
+
+  .desktop-logo {
+    width: 72px;
+  }
+
   .desktop-menu-toggle-wrapper {
     display: none;
   }
@@ -159,8 +185,12 @@ button {
   margin-top: 48px;
 }
 
+.intro-col + .intro-col {
+  margin-top: 24px;
+}
+
 .intro-text {
-  max-width: 400px;
+  max-width: 90%;
 }
 
 .intro-subtitle {
@@ -208,6 +238,13 @@ button {
 
 .intro-col {
   border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.intro-col-icon {
+  width: 52px;
 }
 
 .intro-col-title {
@@ -224,15 +261,28 @@ button {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
   .intro {
     margin-top: 152px;
   }
 
+  .intro-text {
+    max-width: 40%;
+  }
+
+  .intro-subtitle {
+    font-size: 16px;
+  }
+
   .intro-title {
-    font-size: 52px;
+    font-size: 62px;
     font-weight: 700;
+    line-height: 1.125;
+  }
+
+  .intro-description {
+    font-size: 22px;
   }
 
   .intro-buttons-wrapper {
@@ -244,5 +294,15 @@ button {
     gap: 128px;
     justify-content: center;
     margin-top: 64px;
+  }
+
+  .intro-col-title {
+    font-size: 22px;
+  }
+
+  .intro-col-text {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 24px;
   }
 }

@@ -14,7 +14,9 @@
       <nav id="desktop-menu" class="desktop-menu flex-row">
 
      
-        <div class="desktop-logo">IT WORKS GLOBAL</div>
+        <div class="desktop-logo-wrapper">
+          <img class="desktop-logo" src="./images/logo.svg">
+        </div>
     
 
         <ul class="desktop-menu-nav-items flex-row">
@@ -51,7 +53,9 @@
       <!-- TODO: Remove the hide class from here -->
       <nav id="mobile-menu" class="mobile-menu hide">
         <div class="logo-toggle-wrapper flex-row">
-          <div class="mobile-logo">LOGO</div>
+          <div class="mobile-logo-wrapper">
+            <img class="mobile-logo" src="./images/logo.svg">
+          </div>
           <div class="mobile-menu-toggle-wrapper">
             <button onclick="closeMobileMenu()" class="mobile-menu-toggle">
               <img src="./icons/close.svg">
@@ -98,19 +102,27 @@
           </div>
           <div class="intro-flex-column">
             <div class="intro-col">
-              <img class="intro-col-icon" alt="">
-              <h3 class="intro-col-title">Remote Solutions</h3>
-              <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+     
+                <img class="intro-col-icon" src="./icons/remote.svg" alt="">
+        
+              <div>
+                <h3 class="intro-col-title">Remote Solutions</h3>
+                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+              </div>
             </div>
             <div class="intro-col">
-              <img class="intro-col-icon" alt="">
-              <h3 class="intro-col-title">Cybersecurity</h3>
-              <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+              <img class="intro-col-icon" src="./icons/security.svg" alt="">
+              <div>
+                <h3 class="intro-col-title">Cybersecurity</h3>
+                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+              </div>
             </div>
             <div class="intro-col">
-              <img class="intro-col-icon" alt="">
-              <h3 class="intro-col-title">Accounting & Payroll</h3>
-              <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+              <img class="intro-col-icon" src="./icons/money.svg" alt="">
+              <div>
+                <h3 class="intro-col-title">Accounting & Payroll</h3>
+                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
+              </div>
             </div>
           </div>
       </div>
