@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+
 /* Global styles */
 *,
 *::before,
@@ -6,9 +9,13 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
 }
 
 p {
@@ -23,6 +30,11 @@ ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
 }
 
 /* Toggle classes */
@@ -41,7 +53,12 @@ ul, ol {
 
 .header {
   height: 100vh;
-  background-color: lightblue;
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/header_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: whitesmoke;
 }
 
 .header-container {
@@ -56,7 +73,7 @@ ul, ol {
   top: 0;
   left: 0;
   right: 0;
-  background-color: teal;
+  background-color: #1d1e22;
   padding: 24px;
 }
 
@@ -72,17 +89,15 @@ ul, ol {
 
 .mobile-menu-toggle {
   background-color: transparent;
-  border: 0;
-  font-size: 30px;
-  color: lightgray;
 }
 
 .mobile-menu-nav-items {
   max-width: 50%;
+  margin-top: 24px;
 }
 
 .mobile-menu-nav-item {
-  border-bottom: 1px solid wheat;
+  border-bottom: 1px solid #d4d4dc;
   padding: 4px;
 }
 
@@ -99,9 +114,27 @@ ul, ol {
   justify-content: space-between;
 }
 
+.desktop-toggle-button {
+  background-color: transparent;
+  color: white;
+}
+
+.desktop-menu-nav-link {
+  color: white;
+}
+
 
 .desktop-menu-nav-items {
   display: none;
+}
+
+.desktop-menu-nav-button {
+  padding: 4px 16px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  font-weight: 600;
+  background-color: #ff6a34;
 }
 
 @media (min-width: 768px) {
@@ -113,5 +146,103 @@ ul, ol {
   .desktop-menu-nav-items {
     display: flex;
     gap: 24px;
+  }
+}
+
+/* Intro */
+
+.intro {
+  margin-top: 64px;
+}
+
+.intro-flex-column {
+  margin-top: 48px;
+}
+
+.intro-text {
+  max-width: 400px;
+}
+
+.intro-subtitle {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.intro-title {
+  margin-top: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.intro-description {
+  margin-top: 16px;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.intro-buttons-wrapper {
+  margin-top: 12px;
+}
+
+.intro-button {
+  padding: 6px 16px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  font-weight: 600;
+}
+
+.intro-button + .intro-button {
+  margin-left: 12px;
+}
+
+.intro-button:first-child {
+  background-color: #ff6a34;
+  color: white;
+}
+
+.intro-button:last-child {
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+}
+
+.intro-col {
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.intro-col-title {
+  font-size: 16px;
+}
+
+.intro-col-text {
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.intro-flex-column {
+
+}
+
+@media (min-width: 768px) {
+
+  .intro {
+    margin-top: 152px;
+  }
+
+  .intro-title {
+    font-size: 52px;
+    font-weight: 700;
+  }
+
+  .intro-buttons-wrapper {
+    margin-top: 48px;
+  }
+
+  .intro-flex-column {
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+    margin-top: 64px;
   }
 }
