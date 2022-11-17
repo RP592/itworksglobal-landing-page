@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,143 +8,144 @@
   <link rel="stylesheet" href="./style.scss">
   <title>IT Works Global</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="header-container">
-      
-      <nav id="desktop-menu" class="desktop-menu flex-row">
+    <div class="container">
 
-     
-        <div class="desktop-logo-wrapper">
-          <img class="desktop-logo" src="../assets/images/logo.svg">
+      <!-- DESKTOP NAVIGATION -->
+      <nav id="desktop-nav" class="desktop-nav flex-row">
+        <div class="logo-wrapper">
+          <img class="logo" src="../assets/images/logo.svg">
         </div>
-    
-
-        <ul class="desktop-menu-nav-items flex-row">
-          <li class="desktop=menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">About</a>
+        <ul class="nav-items flex-row">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">Why us?</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Why us?</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">Services</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">Products</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">Partners</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link" href="#">Clients</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clients</a>
           </li>
-          <li class="desktop-menu-nav-item">
-            <a class="desktop-menu-nav-link desktop-menu-nav-button" href="#">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link nav-button" href="#">Contact</a>
           </li>
         </ul>
 
-        <div class="desktop-menu-toggle-wrapper">
-          <button onclick="openMobileMenu()" class="desktop-toggle-button">
+        <div class="toggle-button-wrapper">
+          <button onclick="openMobileMenu()" class="toggle-button">
             <img src="../assets/icons/menu.svg">
           </button>
         </div>
       </nav>
+      <!-- END: DESKTOP NAVIGATION -->
 
-      <nav id="mobile-menu" class="mobile-menu hide">
-        <div class="logo-toggle-wrapper flex-row">
-          <div class="mobile-logo-wrapper">
-            <img class="mobile-logo" src="../assets/images/logo.svg">
+      <!-- MOBILE NAVIGATION -->
+      <nav id="mobile-nav" class="mobile-nav hide">
+        <div class="logo-and-toggle-button-wrapper flex-row">
+          <div class="logo-wrapper">
+            <img class="logo" src="../assets/images/logo.svg">
           </div>
-          <div class="mobile-menu-toggle-wrapper">
-            <button onclick="closeMobileMenu()" class="mobile-menu-toggle">
+          <div class="toggle-button-wrapper">
+            <button onclick="closeMobileMenu()" class="toggle-button">
               <img src="../assets/icons/close.svg">
             </button>
           </div>
         </div>
-
-
-        <ul class="mobile-menu-nav-items">
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">About</a>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">Why us?</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Why us?</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">Services</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">Products</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">Partners</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link" href="#">Clients</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clients</a>
           </li>
-          <li class="mobile-menu-nav-item">
-            <a class="mobile-menu-nav-link mobile-menu-nav-button" href="#">Contact Us</a>
+          <li class="nav-item">
+            <a class="nav-link nav-button" href="#">Contact Us</a>
           </li>
         </ul>
       </nav>
+      <!-- END: MOBILE NAVIGATION -->
 
-
+      <!-- INTRO SECTION -->
       <div class="intro">
-        <div class="intro-text">
-          <p class="intro-subtitle">Moving your business next level</p>
-          <h1 class="intro-title">We Deliver <br>Faster Solutions</h1>
-          <p class="intro-description">It works global is Information Technology company that is focuses on developing, customizing, and integrating IT solutions.</p>
+        <div class="text-container">
+          <p class="subtitle">Moving your business next level</p>
+          <h1 class="title">We Deliver <br>Faster Solutions</h1>
+          <p class="description">It works global is Information Technology company that is focuses on developing,
+            customizing, and integrating IT solutions.</p>
         </div>
-          <div class="intro-buttons-wrapper">
-            <button class="intro-button">Our services</button>
-            <button class="intro-button">Contact Us</button>
-          </div>
-          <div class="intro-flex-column">
-            <div class="intro-col">
-     
-                <img class="intro-col-icon" src="../assets/icons/remote.svg" alt="">
-        
-              <div>
-                <h3 class="intro-col-title">Remote Solutions</h3>
-                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="intro-col">
-              <img class="intro-col-icon" src="../assets/icons/security.svg" alt="">
-              <div>
-                <h3 class="intro-col-title">Cybersecurity</h3>
-                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="intro-col">
-              <img class="intro-col-icon" src="../assets/icons/money.svg" alt="">
-              <div>
-                <h3 class="intro-col-title">Accounting & Payroll</h3>
-                <p class="intro-col-text">Lorem ipsum dolor sit amet</p>
-              </div>
+        <div class="button-group">
+          <button class="button">Our services</button>
+          <button class="button">Contact Us</button>
+        </div>
+        <div class="flex-column-container">
+          <div class="column">
+            <img class="column-icon" src="../assets/icons/remote.svg" alt="">
+            <div>
+              <h3 class="column-title">Remote Solutions</h3>
+              <p class="column-text">Lorem ipsum dolor sit amet</p>
             </div>
           </div>
+          <div class="column">
+            <img class="column-icon" src="../assets/icons/security.svg" alt="">
+            <div>
+              <h3 class="column-title">Cybersecurity</h3>
+              <p class="column-text">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="column">
+            <img class="column-icon" src="../assets/icons/money.svg" alt="">
+            <div>
+              <h3 class="column-title">Accounting & Payroll</h3>
+              <p class="column-text">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- END: INTRO SECTION -->
     </div>
   </header>
 
   <main>
 
     <section class="about-section">
-      <div class="about-container">
-        <div class="about-flex-column">
-          <div class="about-col">
+      <div class="container">
+        <div class="flex-column-container">
+          <div class="column">
             <div class="about-image-wrapper">
-              <img class="about-image" src="../assets/images/about.jpg">
+              <img class="image" src="../assets/images/about.jpg">
             </div>
           </div>
-          <div class="about-col">
-            <div class="about-section-text">
-              <h4 class="about-subtitle">Who we are</h4>
-              <h2 class="about-title">Most trusted <br> Business consulting</h2>
-              <p class="about-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quis tenetur quam exercitationem unde magni placeat facere, neque impedit architecto earum aliquam ullam consequuntur minima nobis delectus eius molestias voluptate?
+          <div class="column">
+            <div class="text-container">
+              <h4 class="subtitle">Who we are</h4>
+              <h2 class="title">Most trusted <br> Business consulting</h2>
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quis tenetur quam exercitationem unde
+                magni placeat facere, neque impedit architecto earum aliquam ullam consequuntur minima nobis delectus
+                eius molestias voluptate?
               </p>
             </div>
           </div>
@@ -153,23 +155,23 @@
 
 
     <section class="stats-section">
-      <div class="stats-container">
-        <div class="stats-flex-row">
-          <div class="stats-col">
-            <h3 class="stats-col-title">190+</h3>
-            <p class="stats-col-text">Satisfied Customers</p>
+      <div class="scontainer">
+        <div class="flex-column-container">
+          <div class="column">
+            <h3 class="column-title">190+</h3>
+            <p class="column-description">Satisfied Customers</p>
           </div>
-          <div class="stats-col">
-            <h3 class="stats-col-title">460+</h3>
-            <p class="stats-col-text">Completed Project</p>
+          <div class="column">
+            <h3 class="column-title">460+</h3>
+            <p class="column-description">Completed Project</p>
           </div>
-          <div class="stats-col">
-            <h3 class="stats-col-title">230+</h3>
-            <p class="stats-col-text">Workers</p>
+          <div class="column">
+            <h3 class="column-title">230+</h3>
+            <p class="column-description">Workers</p>
           </div>
-          <div class="stats-col">
-            <h3 class="stats-col-title">50+</h3>
-            <p class="stats-col-text">Company Offices</p>
+          <div class="column">
+            <h3 class="column-title">50+</h3>
+            <p class="column-description">Company Offices</p>
           </div>
         </div>
       </div>
@@ -183,7 +185,9 @@
               <h4 class="services-subtitle">Our services</h4>
               <h2 class="services-title">What we do?</h2>
               <p class="services-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt optio nisi excepturi nostrum unde quaerat quam quos quibusdam delectus, nobis blanditiis, earum error aut eum labore eaque sed eos?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt optio nisi excepturi
+                nostrum unde quaerat quam quos quibusdam delectus, nobis blanditiis, earum error aut eum labore eaque
+                sed eos?
               </p>
             </div>
           </div>
@@ -191,20 +195,23 @@
             <div class="services-col-image-wrapper-1">
               <div class="services-col-image-text-wrapper">
                 <h4 class="service-col-img-title">Fix computer issues</h4>
-                <p class="services-col-img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet molestiae adipisci iste suscipit laudantium</p>
+                <p class="services-col-img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                  eveniet molestiae adipisci iste suscipit laudantium</p>
               </div>
             </div>
             <div class="services-col-image-row">
               <div class="services-col-image-wrapper-2">
                 <div class="services-col-image-text-wrapper">
                   <h4 class="services-col-image-title">Improve productivity</h4>
-                  <p class="services-col-image-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque mollitia, omnis aut, similique</p>
+                  <p class="services-col-image-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                    mollitia, omnis aut, similique</p>
                 </div>
               </div>
               <div class="services-col-image-wrapper-3">
                 <div class="services-col-image-text-wrapper">
                   <h4 class="services-col-image-title">Rent a technician</h4>
-                  <p class="services-col-image-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque mollitia, omnis aut, similique</p>
+                  <p class="services-col-image-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                    mollitia, omnis aut, similique</p>
                 </div>
               </div>
             </div>
@@ -222,7 +229,9 @@
               Our partners
             </h2>
             <p class="partners-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas sequi iusto libero, culpa adipisci asperiores corporis fuga hic pariatur earum dolores possimus cupiditate ipsum tempore dolor temporibus molestias minus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas sequi iusto libero, culpa
+              adipisci asperiores corporis fuga hic pariatur earum dolores possimus cupiditate ipsum tempore dolor
+              temporibus molestias minus.
             </p>
           </div>
 
@@ -268,4 +277,5 @@
 
   <script src="scripts.js"></script>
 </body>
+
 </html>
