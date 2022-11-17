@@ -1,0 +1,14 @@
+{
+  "name": "solutions-guyana-landing-page",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
+}
