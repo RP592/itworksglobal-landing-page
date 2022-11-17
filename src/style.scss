@@ -53,7 +53,7 @@ button {
 
 .header {
   height: max-content;
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/header_bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../assets/images/header_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,7 +377,7 @@ button {
   margin: 24px 0;
   background-color: #ff6a34;
   color: #F1F1F1;
-  background: linear-gradient(rgba(235, 119, 10, 0.925), rgba(236, 91, 8, 0.932)), url('./images/stats_bg.jpg');
+  background: linear-gradient(rgba(235, 119, 10, 0.925), rgba(236, 91, 8, 0.932)), url('../assets/images/stats_bg.jpg');
   background-position: center;
 }
 
@@ -471,15 +471,15 @@ button {
 }
 
 .services-col-image-wrapper-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/repair.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../assets/images/repair.jpg');
   background-position: center;
 }
 .services-col-image-wrapper-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/productivity.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../assets/images/productivity.jpg');
   background-position: center;
 }
 .services-col-image-wrapper-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/technician.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../assets/images/technician.jpg');
   background-position: center;
 }
 
