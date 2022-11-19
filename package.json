@@ -1,5 +1,5 @@
 {
-  "name": "solutions-guyana-landing-page",
+  "name": "itworksglobal",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
