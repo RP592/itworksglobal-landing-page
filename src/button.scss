@@ -1,0 +1,12 @@
+.button-link {
+  display: inline-block;
+  padding: 8px 12px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  font-weight: 600;
+  background-color: #ff6a34;
+  @include mq($from: tablet) {
+    padding: 12px 16px;
+  }
+}

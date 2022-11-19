@@ -1,3 +1,6 @@
+@import "./media-queries-breakpoints.scss";
+@import "./button.scss";
+
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap");
 
@@ -41,6 +44,15 @@ button {
   border: 0;
 }
 
+section {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  @include mq($from: tablet) {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
 /* Classes that control toggling the mobile navigation */
 .hide {
   display: none;
@@ -53,11 +65,59 @@ button {
 /* Helper classes */
 .flex-row {
   display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include mq($from: tablet) {
+    flex-direction: row;
+    gap: 48px;
+  }
 }
 
 .container {
   max-width: 90%;
   margin: 0 auto;
+  @include mq($from: wide) {
+    max-width: 80%;
+  }
+}
+
+.text-container {
+  @include mq($from: tablet) {
+    margin: 0 auto;
+  }
+
+  @include mq($from: desktop) {
+    max-width: 70%;
+  }
+}
+
+.subtitle {
+  font-weight: 200;
+  @include mq($from: tablet) {
+    font-size: 24px;
+  }
+}
+
+.title {
+  line-height: 1.25;
+  font-size: 32px;
+  @include mq($from: tablet) {
+    font-size: 64px;
+  }
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 300;
+  @include mq($from: tablet) {
+    font-size: 22px;
+  }
+}
+
+.paragraph + .paragraph {
+  margin-top: 24px;
 }
 
 // --- SECTIONS --- //
@@ -88,6 +148,8 @@ button {
   }
 
   .logo-and-toggle-button-wrapper {
+    @extend .flex-row;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -128,6 +190,8 @@ button {
 // DESKTOP NAVIGATION
 .desktop-nav {
   justify-content: space-between;
+  @extend .flex-row;
+  flex-direction: row;
 
   .logo-wrapper {
     display: flex;
@@ -153,15 +217,11 @@ button {
   }
 
   .nav-button {
+    @extend .button-link;
     padding: 4px 16px;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 24px;
-    font-weight: 600;
-    background-color: #ff6a34;
   }
 
-  @media (min-width: 768px) {
+  @include mq($from: tablet) {
     .logo-wrapper {
       gap: 24px;
     }
@@ -184,7 +244,8 @@ button {
 
 // INTRO SECTION
 .intro {
-  margin-top: 64px;
+  margin-top: 24px;
+  padding-bottom: 24px;
 
   .text-container {
     max-width: 90%;
@@ -204,22 +265,14 @@ button {
   .description {
     margin-top: 16px;
     line-height: 1.5;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .button-group {
     margin-top: 12px;
   }
 
-  .button {
-    padding: 6px 16px;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 24px;
-    font-weight: 600;
-  }
-
-  .button + .button {
+  .button-link + .button-link {
     margin-left: 12px;
   }
 
@@ -228,7 +281,7 @@ button {
     color: white;
   }
 
-  .button:last-child {
+  .button-link:last-child {
     border: 1px solid whitesmoke;
     background-color: transparent;
   }
@@ -249,7 +302,7 @@ button {
   }
 
   .column-icon {
-    width: 52px;
+    width: 32px;
   }
 
   .column-title {
@@ -262,15 +315,13 @@ button {
     margin-bottom: 12px;
   }
 
-  @media (min-width: 800px) {
-    // .intro {
-    //   margin-top: 152px;
-    // }
-
+  @include mq($from: tablet) {
     margin-top: 152px;
+    padding-bottom: 64px;
 
     .text-container {
-      max-width: 40%;
+      max-width: 50%;
+      margin: 0;
     }
 
     .subtitle {
@@ -278,7 +329,7 @@ button {
     }
 
     .title {
-      font-size: 62px;
+      font-size: 64px;
       font-weight: 700;
       line-height: 1.125;
     }
@@ -291,6 +342,10 @@ button {
       margin-top: 48px;
     }
 
+    .button {
+      padding: 8px 16px;
+    }
+
     .flex-column-container {
       display: flex;
       gap: 128px;
@@ -300,6 +355,10 @@ button {
 
     .column + .column {
       margin-top: 0;
+    }
+
+    .column-icon {
+      width: 52px;
     }
 
     .column-title {
@@ -315,56 +374,29 @@ button {
 }
 // END: INTRO SECTION
 
-// END: HEADER SECTION
+// END: HEADER SECTION //
 
-/* ABOUT SECTION */
+// ABOUT SECTION
 .about-section {
   margin: 24px 0;
-
-  .flex-column-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column {
-    width: 100%;
-  }
-
-  .image {
-    width: 100%;
-  }
-
-  .subtitle {
-    font-weight: 200;
-    font-size: 14px;
-  }
-
-  .title {
-    font-size: 28px;
-    line-height: 1.25;
-  }
 
   .description {
     margin-top: 16px;
   }
 
-  @media (min-width: 800px) {
-    .about-section {
-      margin: 64px 0;
-    }
+  .description-paragraph + .description-paragraph {
+    margin-top: 24px;
+  }
 
-    .flex-column-container {
-      flex-direction: row;
-      line-height: 1.5;
-    }
+  @include mq($from: tablet) {
+    margin: 64px 0;
 
     .subtitle {
       font-size: 24px;
     }
 
     .title {
-      font-size: 42px;
+      font-size: 64px;
     }
 
     .description {
@@ -387,36 +419,40 @@ button {
   background-position: center;
 
   .container {
-    @extend .container;
     padding: 24px 0;
-  }
-
-  .flex-column-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 
   .column {
     text-align: center;
-    padding: 24px 0;
+    padding: 16px 0;
   }
 
-  .column-title {
+  .stat-title {
     font-size: 32px;
     font-weight: 700;
   }
 
-  .column-description {
+  .stat-description {
     font-weight: 200;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
   }
 
-  @media (min-width: 800px) {
-    .flex-column-container {
-      flex-direction: row;
+  @include mq($from: tablet) {
+    .flex-row {
       justify-content: space-evenly;
+    }
+
+    .column {
+      padding: 24px 0;
+    }
+
+    .stat-title {
+      font-size: 54px;
+    }
+
+    .stat-description {
+      font-size: 18px;
     }
   }
 }
@@ -426,24 +462,8 @@ button {
 .services-section {
   margin: 24px 0;
 
-  .flex-column-container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-
-  .subtitle {
-    font-weight: 200;
-    font-size: 14px;
-  }
-
-  .title {
-    font-size: 28px;
-    line-height: 1.25;
-  }
-
-  .description {
-    margin-top: 16px;
+  .text-container {
+    margin: 0;
   }
 
   .image-grid {
@@ -489,8 +509,18 @@ button {
     color: white;
   }
 
+  .image-title {
+    font-size: 24px;
+  }
+
+  .image-text {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+
   @media (min-width: 800px) {
-    .flex-column-container {
+    .flex-row {
       flex-direction: row;
       align-items: center;
     }
@@ -505,6 +535,10 @@ button {
 /* PARTNERS SECTION */
 .partners-section {
   margin: 48px 0;
+
+  .text-container {
+    margin: 0;
+  }
 
   .section-grid {
     display: flex;
@@ -525,6 +559,7 @@ button {
   @media (min-width: 800px) {
     .section-grid {
       justify-content: flex-start;
+      margin-top: 64px;
     }
 
     .logo-wrapper {
@@ -535,16 +570,83 @@ button {
 }
 // END: PARTNERS SECTION
 
-/* FOOTER */
-.footer {
-  height: 64px;
+
+// CONTACT SECTION
+.contact-section {
+  padding: 24px 0;
+
   background-color: #28282b;
 
+  .text-container {
+    color: white;
+    margin: 0;
+  }
+
+  .flex-row-wrapper {
+    margin-top: 24px;
+  }
+
+  .flex-row + .flex-row {
+    margin-top: 8px;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 0 24px 0 24px;
+    border-left: 1px solid whitesmoke;
+  }
+  
+  .contact-card-title {
+    font-size: 24px;
+    color: white;
+  }
+
+  .contact-card-col {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    color: white;
+  }
+
+  .contact-card-icon {
+
+  }
+
+  .button-link {
+    margin-top: 48px;
+  }
+
+  @include mq($from: tablet) {
+    padding: 64px;
+
+    .contact-card {
+      padding: 0 48px 0 48px;
+    }
+
+    .contact-card-title {
+      font-size: 32px;
+    }
+  }
+}
+// END: CONTACT SECTION
+
+
+/* FOOTER */
+.footer {
+  height: max-content;
+
   .text {
-    padding: 16px;
-    color: #f1f1f1;
-    font-weight: 200;
+    padding: 18px;
+    color: #28282b;
+    font-weight: 300;
+  }
+
+  .developer {
     font-size: 12px;
+
+    a {
+      color: orange;
+    }
   }
 }
 // END: FOOTER
