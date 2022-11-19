@@ -1,2 +1,2 @@
-# solutions-guyana-landing-page
-An elegant landing page for solutions Guyana
+# IT Works Global - Landing page
+An elegant landing page for IT Works Global
