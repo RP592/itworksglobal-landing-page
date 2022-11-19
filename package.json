@@ -1,0 +1,16 @@
+{
+  "name": "solutions-guyana-landing-page",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.0",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1",
+    "sass-mq": "^6.0.0"
+  }
+}
