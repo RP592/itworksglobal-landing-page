@@ -425,90 +425,96 @@ button {
 // END: STATS SECTION
 
 
-/* Services section */
+/* SERVICES SECTION */
 .services-section {
   margin: 24px 0;
-}
 
-.services-container {
-  max-width: 90%;
-  margin: 0 auto;
-}
+  .flex-column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
 
-.services-flex-column {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
+  .subtitle {
+    font-weight: 200;
+    font-size: 14px;
+  }
 
-.services-subtitle {
-  font-weight: 200;
-  font-size: 14px;
-}
+  .title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
 
-.services-title {
-  font-size: 28px;
-  line-height: 1.25;
-}
+  .description {
+    margin-top: 16px;
+  }
 
-.services-text {
-  margin-top: 16px;
-}
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 
-.services-col-image-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+  .image-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 
-.services-col-image-row {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.services-col-image-wrapper-1,
-.services-col-image-wrapper-2,
-.services-col-image-wrapper-3 {
-  background-color: lightblue;
-  padding: 32px;
-  min-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
-
-.services-col-image-wrapper-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/repair.jpg");
-  background-position: center;
-}
-.services-col-image-wrapper-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/productivity.jpg");
-  background-position: center;
-}
-.services-col-image-wrapper-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/technician.jpg");
-  background-position: center;
-}
-
-.services-col-image-text-wrapper {
-  color: white;
-}
-
-@media (min-width: 800px) {
-  .services-flex-column {
-    flex-direction: row;
+  .image-wrapper-1,
+  .image-wrapper-2,
+  .image-wrapper-3 {
+    background-color: lightblue;
+    padding: 32px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-size: cover;
   }
 
-  .services-col-image-row {
-    flex-direction: row;
+  .image-wrapper-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../assets/images/repair.jpg");
+    background-position: center;
   }
+  .image-wrapper-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../assets/images/productivity.jpg");
+    background-position: center;
+  }
+  .image-wrapper-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../assets/images/technician.jpg");
+    background-position: center;
+  }
+  .image-text-wrapper {
+    color: white;
+  }
+
+  @media (min-width: 800px) {
+    .flex-column-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .services-col-image-row {
+      flex-direction: row;
+    }
+  }
+  // END: SERVICES SECTION
+
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Partners section */
 
