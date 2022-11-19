@@ -344,7 +344,7 @@ button {
     font-size: 28px;
     line-height: 1.25;
   }
-  
+
   .description {
     margin-top: 16px;
   }
@@ -353,28 +353,26 @@ button {
     .about-section {
       margin: 64px 0;
     }
-  
+
     .flex-column-container {
       flex-direction: row;
       line-height: 1.5;
     }
-  
+
     .subtitle {
       font-size: 24px;
     }
-  
+
     .title {
       font-size: 42px;
     }
-  
+
     .description {
       margin-top: 24px;
     }
   }
-
 }
 // END: ABOUT SECTION
-
 
 // STATS SECTION
 .stats-section {
@@ -423,7 +421,6 @@ button {
   }
 }
 // END: STATS SECTION
-
 
 /* SERVICES SECTION */
 .services-section {
@@ -497,78 +494,57 @@ button {
       flex-direction: row;
       align-items: center;
     }
-  
-    .services-col-image-row {
+
+    .image-row {
       flex-direction: row;
     }
   }
-  // END: SERVICES SECTION
-
 }
+// END: SERVICES SECTION
 
-
-
-
-
-
-
-
-
-
-
-/* Partners section */
-
+/* PARTNERS SECTION */
 .partners-section {
   margin: 48px 0;
-}
 
-.partners-container {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.partners-grid {
-  display: flex;
-  /* flex-direction: column; */
-  gap: 24px;
-  flex-wrap: wrap;
-  /* justify-content: center; */
-  margin-top: 24px;
-}
-
-.partners-brand-wrapper {
-  background-color: lightcoral;
-  width: 150px;
-  height: 150px;
-  flex-shrink: 0;
-}
-
-@media (min-width: 800px) {
-  .partners-grid {
-    justify-content: flex-start;
+  .section-grid {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 24px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin-top: 24px;
   }
 
-  .partners-brand-wrapper {
-    width: 200px;
-    height: 200px;
+  .logo-wrapper {
+    background-color: lightcoral;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 800px) {
+    .section-grid {
+      justify-content: flex-start;
+    }
+
+    .logo-wrapper {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
+// END: PARTNERS SECTION
 
-/* Footer */
-
+/* FOOTER */
 .footer {
   height: 64px;
   background-color: #28282b;
-}
 
-.footer-container {
-  max-width: 90%;
-  margin: 0 auto;
+  .text {
+    padding: 16px;
+    color: #f1f1f1;
+    font-weight: 200;
+    font-size: 12px;
+  }
 }
-
-.footer-text {
-  padding: 16px;
-  color: #f1f1f1;
-  font-weight: 200;
-  font-size: 12px;
-}
+// END: FOOTER
