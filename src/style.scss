@@ -184,6 +184,10 @@ section {
   .nav-button {
     // TODO: To implement
   }
+
+  @include mq($from: tablet) {
+    display: none;
+  }
 }
 // END: MOBILE NAVIGATION
 
@@ -313,6 +317,8 @@ section {
     font-weight: 200;
     font-size: 14px;
     margin-bottom: 12px;
+    max-width: 80%;
+    margin-top: 4px;
   }
 
   @include mq($from: tablet) {
@@ -358,7 +364,7 @@ section {
     }
 
     .column-icon {
-      width: 52px;
+      width: 64px;
     }
 
     .column-title {
@@ -460,8 +466,6 @@ section {
 
 /* SERVICES SECTION */
 .services-section {
-  margin: 24px 0;
-
   .text-container {
     margin: 0;
   }
@@ -505,7 +509,7 @@ section {
       url("../assets/images/technician.jpg");
     background-position: center;
   }
-  .image-text-wrapper {
+  .image-text-container {
     color: white;
   }
 
@@ -519,14 +523,52 @@ section {
     margin-top: 16px;
   }
 
-  @media (min-width: 800px) {
-    .flex-row {
-      flex-direction: row;
-      align-items: center;
+  @include mq($from: tablet) {
+    .text-container {
+      max-width: 90%;
+    }
+
+    .column {
+      width: 100%;
     }
 
     .image-row {
       flex-direction: row;
+    }
+
+    .image-wrapper-1 {
+      .image-text {
+        max-width: 70%;
+      }
+    }
+
+    .image-wrapper-2 .image-wrapper-3 {
+      .image-text {
+        max-width: 80%;
+      }
+    }
+  }
+
+  @include mq($from: tablet, $until: desktop) {
+    .flex-row {
+      flex-direction: column;
+    }
+
+    .image-grid {
+      flex-direction: row;
+    }
+
+    .image-wrapper-1,
+    .image-wrapper-2 .image-wrapper-3 {
+      .image-text {
+        max-width: 90%;
+      }
+    }
+  }
+
+  @include mq($from: desktop) {
+    .flex-row {
+      align-items: center;
     }
   }
 }
@@ -550,7 +592,7 @@ section {
   }
 
   .logo-wrapper {
-    background-color: lightcoral;
+    background-color: #e5e4e2;
     width: 150px;
     height: 150px;
     flex-shrink: 0;
@@ -569,7 +611,6 @@ section {
   }
 }
 // END: PARTNERS SECTION
-
 
 // CONTACT SECTION
 .contact-section {
@@ -590,26 +631,30 @@ section {
     margin-top: 8px;
   }
 
-  .contact-card {
+  .contact-info {
     width: 100%;
     padding: 0 24px 0 24px;
     border-left: 1px solid whitesmoke;
   }
-  
-  .contact-card-title {
+
+  .contact-info-title {
     font-size: 24px;
     color: white;
   }
 
-  .contact-card-col {
+  .contact-info-col {
     display: flex;
     gap: 12px;
     width: 100%;
     color: white;
   }
 
-  .contact-card-icon {
+  .contact-info-icon {
+  }
 
+  .contact-info-email {
+    color: white;
+    text-decoration: underline;
   }
 
   .button-link {
@@ -619,17 +664,16 @@ section {
   @include mq($from: tablet) {
     padding: 64px;
 
-    .contact-card {
+    .contact-info {
       padding: 0 48px 0 48px;
     }
 
-    .contact-card-title {
+    .contact-info-title {
       font-size: 32px;
     }
   }
 }
 // END: CONTACT SECTION
-
 
 /* FOOTER */
 .footer {
