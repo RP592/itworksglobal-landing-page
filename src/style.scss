@@ -248,8 +248,8 @@ section {
 
 // INTRO SECTION
 .intro {
-  margin-top: 24px;
-  padding-bottom: 24px;
+  margin-top: 48px;
+  padding-bottom: 48px;
 
   .text-container {
     max-width: 90%;
@@ -262,7 +262,7 @@ section {
   }
 
   .title {
-    margin-top: 16px;
+    margin-top: 12px;
     line-height: 1.25;
     font-weight: 600;
   }
@@ -293,6 +293,7 @@ section {
 
   .flex-row {
     margin-top: 48px;
+    gap: 0;
   }
 
   .column {
@@ -348,7 +349,8 @@ section {
     }
 
     .flex-row {
-      display: flex;
+      gap: 48px;
+      flex-direction: row;
       justify-content: center;
       margin-top: 64px;
     }
