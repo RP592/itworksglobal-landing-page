@@ -47,9 +47,11 @@ button {
 section {
   margin-top: 24px;
   margin-bottom: 24px;
+  padding: 16px 0;
   @include mq($from: tablet) {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 48px 0;
   }
 }
 
@@ -118,6 +120,10 @@ section {
 
 .paragraph + .paragraph {
   margin-top: 24px;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 // --- SECTIONS --- //
@@ -424,7 +430,8 @@ section {
 
 // STATS SECTION
 .stats-section {
-  margin: 24px 0;
+  // margin: 24px 0;
+  padding: 0;
   background-color: #ff6a34;
   color: #f1f1f1;
   background: linear-gradient(
@@ -600,6 +607,50 @@ section {
   }
 }
 // END: SERVICES SECTION
+
+//  TESTIMONIALS SECTION
+.testimonials-section {
+  background-color: #efefef;
+
+  .text-container {
+    margin: 0;
+  }
+
+  .flex-row {
+    margin-top: 24px;
+  }
+
+  .testimonial-card {
+    background-color: #14213d;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    color: hsl(300, 24%, 96%);
+
+    .testimonial-card-head {
+      .flex-row {
+        gap: 8px;
+      }
+    }
+  }
+
+  .testimonial-card-image {
+    width: 52px;
+    transform: rotate(180deg);
+    align-self: flex-start;
+  }
+  .testimonial-card-title {
+    margin-bottom: 0.2em;
+    font-weight: 700;
+  }
+  .testimonial-card-subtitle {
+    color: #889482;
+  }
+  .testimonial-card-description {
+    margin-top: 12px;
+    line-height: 130%;
+  }
+}
+// END: TESTIMONIAL SECTION
 
 /* PARTNERS SECTION */
 .partners-section {
