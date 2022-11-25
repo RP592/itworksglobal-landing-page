@@ -126,6 +126,10 @@ section {
   font-weight: 700;
 }
 
+.box-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+}
+
 // --- SECTIONS --- //
 
 // HEADER SECTION
@@ -410,6 +414,30 @@ section {
     margin-top: 24px;
   }
 
+  .certifications {
+    @extend .flex-row;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .card {
+    @extend .box-shadow;
+    background-color: #F7F7F7;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #F1F3F6;
+    font-weight: 300;
+  }
+
+  .icon-and-text-container {
+    @extend .flex-row;
+    gap: 8px;
+  }
+
   @include mq($from: tablet) {
     margin: 64px 0;
 
@@ -495,6 +523,7 @@ section {
   }
 
   .chip {
+    @extend .box-shadow;
     width: max-content;
     background-color: whitesmoke;
     padding: 8px 12px;
@@ -502,6 +531,7 @@ section {
     display: flex;
     gap: 6px;
     align-items: center;
+    font-weight: 300;
   }
 
   .image-grid {
