@@ -435,7 +435,13 @@ section {
 
   .icon-and-text-container {
     @extend .flex-row;
+    flex-direction: row;
     gap: 8px;
+    align-items: center;
+  }
+
+  .icon {
+    width: 72px;
   }
 
   @include mq($from: tablet) {
