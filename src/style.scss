@@ -442,6 +442,7 @@ section {
 
   .certifications {
     @extend .flex-row;
+    flex-direction: row;
     margin-top: 32px;
     flex-wrap: wrap;
     gap: 16px;
@@ -450,25 +451,41 @@ section {
   .card {
     @extend .box-shadow;
     background-color: white;
-    padding: 8px 16px;
+    padding: 8px;
     display: flex;
     gap: 8px;
     align-items: center;
     flex-shrink: 0;
     border: 1px solid #f1f3f6;
     font-weight: 300;
-  }
-
-  .icon-and-text-container {
-    @extend .flex-row;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
+    position: relative;
+    .card-description {
+      visibility: hidden;
+      background-color: #14213d;
+      color: white;
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      width: max-content;
+      bottom: 100%;
+      margin-bottom: 8px;
+      margin-left: -8px;
+    }
+    &:hover {
+      .card-description {
+        visibility: visible;
+      }
+    }
   }
 
   .icon {
     width: 72px;
   }
+
+
+
 }
 
 // END: CERTIFICATES SECTION
