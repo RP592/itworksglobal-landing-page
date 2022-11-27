@@ -49,8 +49,8 @@ section {
   margin-bottom: 24px;
   padding: 16px 0;
   @include mq($from: tablet) {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 48px;
+    margin-bottom: 48px;
     padding: 48px 0;
   }
 }
@@ -89,7 +89,7 @@ section {
   }
 
   @include mq($from: desktop) {
-    max-width: 60%;
+    max-width: 65%;
   }
 }
 
@@ -127,7 +127,8 @@ section {
 }
 
 .box-shadow {
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 // --- SECTIONS --- //
@@ -173,8 +174,6 @@ section {
   }
 
   .nav-items {
-    // TODO: Play around with this
-    // max-width: 50%;
     margin-top: 24px;
   }
 
@@ -189,10 +188,6 @@ section {
 
   .nav-link {
     color: white;
-  }
-
-  .nav-button {
-    // TODO: To implement
   }
 
   @include mq($from: tablet) {
@@ -404,7 +399,9 @@ section {
 
 // ABOUT SECTION
 .about-section {
-  margin: 24px 0;
+  .text-container {
+    // margin: 0;
+  }
 
   .description {
     margin-top: 16px;
@@ -412,36 +409,6 @@ section {
 
   .description-paragraph + .description-paragraph {
     margin-top: 24px;
-  }
-
-  .certifications {
-    @extend .flex-row;
-    margin-top: 32px;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .card {
-    @extend .box-shadow;
-    background-color: #F7F7F7;
-    padding: 8px 16px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    flex-shrink: 0;
-    border: 1px solid #F1F3F6;
-    font-weight: 300;
-  }
-
-  .icon-and-text-container {
-    @extend .flex-row;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .icon {
-    width: 72px;
   }
 
   @include mq($from: tablet) {
@@ -462,9 +429,53 @@ section {
 }
 // END: ABOUT SECTION
 
+// CERTIFICATES SECTION
+
+.certificates-section {
+  background-color: #efefef;
+  margin-bottom: 0;
+  padding-bottom: 48px;
+
+  .text-container {
+    // margin: 0;
+  }
+
+  .certifications {
+    @extend .flex-row;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .card {
+    @extend .box-shadow;
+    background-color: white;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #f1f3f6;
+    font-weight: 300;
+  }
+
+  .icon-and-text-container {
+    @extend .flex-row;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .icon {
+    width: 72px;
+  }
+}
+
+// END: CERTIFICATES SECTION
+
 // STATS SECTION
 .stats-section {
-  // margin: 24px 0;
+  margin-top: 0;
   padding: 0;
   background-color: #ff6a34;
   color: #f1f1f1;
