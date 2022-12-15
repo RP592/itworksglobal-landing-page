@@ -14,3 +14,23 @@ npm install
 ```sh
 npm run start
 ```
+
+## Switching node versions
+
+- Check node version:
+
+```sh
+node -v
+```
+
+- Install a specific version:
+
+```sh
+nvm install 14
+```
+
+- Use the newly installed version
+
+```sh
+nvm use 14
+```
